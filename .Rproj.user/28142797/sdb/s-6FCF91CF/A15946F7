@@ -1,0 +1,17 @@
+{
+    "contents" : "shinyUI(pageWithSidebar( \n                headerPanel(\"Body Mass Index Calculator\"),\n                \n                sidebarPanel(\n                        h3('BMI is an common index used by the WHO to classify the weight of a person, taken into account its height.'),\n                        h3('Use the sliders to insert your weight in kilograms and your height in meters to get your current BMI.'),\n                                                 \n                        sliderInput('weight', 'Your weight in kilograms', 65, min =30, max = 200, step=1),\n                        \n                        sliderInput('height', 'Your height in meters', 1.80, min =1, max = 2.30, step=0.01),\n                \n                        h4('BMI is calculated as weight (in kilograms) divided by the squared height (in meters)')\n                        \n                        ),\n                \n                mainPanel(\n                        h3('Your current BMI is'),\n                        verbatimTextOutput('BMI'),\n                        \n                        verbatimTextOutput('BMI_status')\n                )\n))\n               \n       ",
+    "created" : 1433694146139.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3911222308",
+    "id" : "A15946F7",
+    "lastKnownWriteTime" : 1433693924,
+    "path" : "~/GIT/Data_Product_Assignment/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

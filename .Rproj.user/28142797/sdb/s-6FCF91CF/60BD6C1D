@@ -1,0 +1,17 @@
+{
+    "contents" : "shinyServer(function(input, output) {\n        \n        #Calculate BMI\n        output$BMI <- renderPrint({round((input$weight / ((input$height)^2)),2)})\n          \n        # Assign to the WHO classification according to BMI value\n        output$BMI_status  <- renderText({        \n                                if ((input$weight / ((input$height)^2))>=30) {'According to the WHO classification, you are obese. This can severely harm your health!'}\n                                else if ((input$weight / ((input$height)^2))>=25) {'According to the WHO classification, you are overweight.'}\n                                else if ((input$weight / ((input$height)^2))>=18.5) {'According to the WHO classification, you have a healthy weight.'}\n                                else if ((input$weight / ((input$height)^2))>=18.5) {'According to the WHO classification, you are underweight.'}\n                                else {'According to the WHO classification, you are severily underweight. This can severely harm your health!'}\n                                })\n} )",
+    "created" : 1433694153598.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2276245333",
+    "id" : "60BD6C1D",
+    "lastKnownWriteTime" : 1433694241,
+    "path" : "~/GIT/Data_Product_Assignment/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
